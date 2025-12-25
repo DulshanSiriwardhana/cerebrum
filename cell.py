@@ -10,6 +10,10 @@ class Cell:
 
     def insertConnection(self, connection):
         self.connections.append(connection)
+
+    def fire(self):
+        #I am thinking bruh
+        print("I am thinking bruh")
     
     def details(self):
         return {
