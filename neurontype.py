@@ -7,4 +7,10 @@ class NeuronType():
         self.special = special
         
     def getType(self):
-        return self
+        return {
+            "function": self.function,
+            "structure": self.structure,
+            "signal": self.signal,
+            "myelination": self.myelination,
+            "special": self.special
+        }

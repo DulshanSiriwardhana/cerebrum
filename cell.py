@@ -1,8 +1,10 @@
 
 class Cell:
     cell_id = 0
+
     def __init__(self, type, connections):
-        self.cell_id=self.cell_id+1
+        Cell.cell_id += 1
+        self.cell_id = Cell.cell_id
         self.type = type
         self.connections = connections
 
@@ -10,4 +12,8 @@ class Cell:
         self.connections.append(connection)
     
     def details(self):
-        return self
+        return {
+            "id": self.cell_id,
+            "type": self.type.getType(),
+            "connections": self.connections
+        }
