@@ -1,5 +1,8 @@
 import cell as c
+import neurontype as nt
 
-cell1 = c.Cell()
+neuronType = nt.NeuronType("Interneurons", "Multipolar", "Excitatory", "Myelinated", "Mirror")
 
-cell1.details()
+cell1 = c.Cell(neuronType, [])
+
+print(cell1.details().type.getType().function)

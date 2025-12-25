@@ -1,3 +1,4 @@
+
 class Cell:
     def __init__(self, type, connections):
         self.type = type
@@ -7,4 +8,4 @@ class Cell:
         self.connections.append(connection)
     
     def details(self):
-        print(self.type, self.connections)
+        return self
